@@ -1,4 +1,4 @@
-package com.d3if3116.hitung_luassegitiga
+package com.d3if3116.hitung_luassegitiga.ui
 
 import androidx.lifecycle.ViewModel
 import com.d3if3116.hitung_luassegitiga.model.hasilLuas
