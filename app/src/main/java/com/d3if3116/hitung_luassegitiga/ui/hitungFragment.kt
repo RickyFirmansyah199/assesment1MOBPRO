@@ -2,12 +2,12 @@ package com.d3if3116.hitung_luassegitiga.ui
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.d3if3116.hitung_luassegitiga.R
 import com.d3if3116.hitung_luassegitiga.databinding.FragmentHitungBinding
 import com.d3if3116.hitung_luassegitiga.model.hasilLuas
@@ -24,7 +24,26 @@ class hitungFragment : Fragment() {
         binding = FragmentHitungBinding.inflate(layoutInflater,container, false)
         binding.buttonHitung.setOnClickListener { HitungLuas() }
         binding.buttonReset.setOnClickListener{ resetButton () }
+        binding.historyButton.setOnClickListener{
+            it.findNavController().navigate(
+                R.id.action_hitungFragment_to_historyFragment
+            )
+        }
+        setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.option_menu, menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.menu_about) {
+            findNavController().navigate(
+                R.id.action_hitungFragment_to_aboutFragment2)
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun HitungLuas() {

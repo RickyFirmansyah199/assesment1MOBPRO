@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasi"
+    app:startDestination="@id/hitungFragment">
+
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="com.d3if3116.hitung_luassegitiga.ui.hitungFragment"
+        android:label="fragment_hitung"
+        tools:layout="@layout/fragment_hitung" >
+        <action
+            android:id="@+id/action_hitungFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.d3if3116.hitung_luassegitiga.ui.HistoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.d3if3116.hitung_luassegitiga.ui.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+</navigation>
