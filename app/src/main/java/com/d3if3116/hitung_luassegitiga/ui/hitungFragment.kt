@@ -1,5 +1,6 @@
 package com.d3if3116.hitung_luassegitiga.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
@@ -17,6 +18,8 @@ class hitungFragment : Fragment() {
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this)[MainViewModel::class.java]
     }
+
+
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +46,10 @@ class hitungFragment : Fragment() {
                 R.id.action_hitungFragment_to_aboutFragment2)
             return true
         }
+
+
         return super.onOptionsItemSelected(item)
+
     }
 
     private fun HitungLuas() {

@@ -15,4 +15,6 @@
     <string name="historyButton">History</string>
     <string name="copyright">Aplikasi penghitung luas segitiga membantu anda mengetahui luas dari sisi dan alas yang anda masukan.</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="shareapk">Share LuasSegitiga</string>
+    <string name="buttonShare">SHARE</string>
 </resources>
