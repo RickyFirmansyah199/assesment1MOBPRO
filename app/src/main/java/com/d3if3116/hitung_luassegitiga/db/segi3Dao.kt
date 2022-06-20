@@ -11,5 +11,5 @@ interface segi3Dao {
     @Insert
     fun insert(bmi: Segi3Entity)
     @Query("SELECT * FROM luas_segi3 ORDER BY id DESC LIMIT 1")
-    fun getLastBmi(): LiveData<Segi3Entity?>
+    fun getLastsegi3(): LiveData<Segi3Entity?>
 }

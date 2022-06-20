@@ -10,11 +10,19 @@
     <string name="buttonHitung">Hitung</string>
     <string name="hasilLuas_X"> Luas = %1$.2f</string>
     <string name="buttonReset">RESET</string>
-    <string name="Alas_invalid" >Alas Tidak Boleh Kosong!!</string>
-    <string name="Tinggi_invalid" >Tinggi Tidak Boleh Kosong!!</string>
+    <string name="Alas_invalid">Alas Tidak Boleh Kosong!!</string>
+    <string name="Tinggi_invalid">Tinggi Tidak Boleh Kosong!!</string>
     <string name="historyButton">History</string>
     <string name="copyright">Aplikasi penghitung luas segitiga membantu anda mengetahui luas dari sisi dan alas yang anda masukan.</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="shareapk">Share LuasSegitiga</string>
     <string name="buttonShare">SHARE</string>
+    <string name="ButtonMulaiMenghitung">Mulai Menghitung</string>
+    <string name="buttonGlosarium">Glossarium</string>
+    <string name="title_activity_menu">Hitung Luas Segitiga</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Glossarium</string>
+    <string name="title_notifications">Tentang Aplikasi</string>
+    <string name="message">%1$s diklik!</string>
+    <string name="koneksi_error">Koneksi Error</string>
 </resources>

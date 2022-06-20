@@ -14,12 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        navController = findNavController(R.id.myNavHostFragment)
-        NavigationUI.setupActionBarWithNavController(this, navController)
 
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp()
-    }
+
 }
