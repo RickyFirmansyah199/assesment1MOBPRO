@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import com.d3if3116.hitung_luassegitiga.databinding.FragmentDashboardBinding
+import com.d3if3116.hitung_luassegitiga.databinding.FragmentGlossariumBinding
 import com.d3if3116.hitung_luassegitiga.network.ApiStatus
 import com.d3if3116.hitung_luassegitiga.ui.MainAdapter
 
@@ -19,13 +19,13 @@ class DashboardFragment : Fragment() {
         ViewModelProvider(this).get(DashboardViewModel::class.java)
     }
 
-    private lateinit var binding: FragmentDashboardBinding
+    private lateinit var binding: FragmentGlossariumBinding
     private lateinit var  myAdapter: MainAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentDashboardBinding.inflate(layoutInflater,container,false)
+        binding = FragmentGlossariumBinding.inflate(layoutInflater,container,false)
         myAdapter = MainAdapter()
         with(binding.recyclerView){
             addItemDecoration(

@@ -3,17 +3,13 @@ package com.d3if3116.hitung_luassegitiga.ui.home
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.d3if3116.hitung_luassegitiga.R
-import com.d3if3116.hitung_luassegitiga.databinding.FragmentHitungBinding
 import com.d3if3116.hitung_luassegitiga.databinding.FragmentHomeBinding
 import com.d3if3116.hitung_luassegitiga.model.hasilLuas
-import com.d3if3116.hitung_luassegitiga.ui.MainViewModel
 
 class HomeFragment : Fragment() {
 
@@ -30,11 +26,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(layoutInflater,container, false)
         binding.buttonHitung.setOnClickListener { HitungLuas() }
         binding.buttonReset.setOnClickListener{ resetButton () }
-        binding.historyButton.setOnClickListener{
-            it.findNavController().navigate(
-                R.id.action_hitungFragment_to_historyFragment
-            )
-        }
+
         setHasOptionsMenu(true)
         return binding.root
     }
